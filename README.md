@@ -9,6 +9,7 @@ I build research systems that make **assumptions, data quality, transaction cost
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sohan_Hajra-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sohan-hajra/)
 [![Email](https://img.shields.io/badge/Email-sohancollege27%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sohancollege27@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-sohanHajra-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sohanHajra)
+[![Portfolio](https://img.shields.io/badge/Portfolio-sohanhajra.github.io-0F766E?style=for-the-badge&logo=githubpages&logoColor=white)](https://sohanhajra.github.io/)
 
 **UIUC B.S. Mathematics & Computer Science · GPA 3.49 / 4.00 · ACM SIGAI Author · UAE Golden Visa**
 
@@ -213,7 +214,7 @@ only then decide whether the result is interesting
 
 ### Want to talk research, markets, or engineering?
 
-[LinkedIn](https://www.linkedin.com/in/sohan-hajra/) · [Email](mailto:sohancollege27@gmail.com) · [GitHub](https://github.com/sohanHajra)
+[Portfolio](https://sohanhajra.github.io/) · [LinkedIn](https://www.linkedin.com/in/sohan-hajra/) · [Email](mailto:sohancollege27@gmail.com) · [GitHub](https://github.com/sohanHajra)
 
 <sub>Built as the front page of my technical portfolio — projects above are intended to be read, questioned, and inspected.</sub>
 
