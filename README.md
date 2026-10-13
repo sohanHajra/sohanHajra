@@ -216,6 +216,6 @@ only then decide whether the result is interesting
 
 [Portfolio](https://sohanhajra.github.io/) · [LinkedIn](https://www.linkedin.com/in/sohan-hajra/) · [Email](mailto:sohancollege27@gmail.com) · [GitHub](https://github.com/sohanHajra)
 
-<sub>Built as the front page of my technical portfolio — projects above are intended to be read, questioned, and inspected.</sub>
+<sub>Built as the front page of my technical portfolio - projects above are intended to be read, questioned, and inspected.</sub>
 
 </div>
