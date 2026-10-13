@@ -4,7 +4,7 @@
 
 ### Quantitative Research · Research Engineering · Systematic Trading
 
-I build research systems that make **assumptions, data quality, transaction costs, out-of-sample behavior, and failure modes** visible — not just the headline result.
+I build research systems that make **assumptions, data quality, transaction costs, out-of-sample behavior, and failure modes** visible - not just the headline result.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sohan_Hajra-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sohan-hajra/)
 [![Email](https://img.shields.io/badge/Email-sohancollege27%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sohancollege27@gmail.com)
