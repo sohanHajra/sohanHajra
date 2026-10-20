@@ -133,6 +133,21 @@ This project pushed me from thinking about a signal in isolation to thinking abo
 
 ---
 
+## AI/product build · revisited
+
+### Quizzo — document-grounded LLM quiz generator
+
+[![Repository](https://img.shields.io/badge/View_repository-Quizzo-181717?style=flat-square&logo=github)](https://github.com/sohanHajra/Quizzo)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Gemini](https://img.shields.io/badge/Vertex_AI-Gemini-4285F4?style=flat-square)
+![Retrieval](https://img.shields.io/badge/Retrieval-Chroma-0F766E?style=flat-square)
+
+An earlier personal project built out of a real study frustration: before exams, generic LLM quizzes did not reliably test me on the *specific material in my notes*. Quizzo ingests PDFs, splits and embeds text with Vertex AI, retrieves relevant context from Chroma, and prompts Gemini to generate structured multiple-choice questions and explanations. It includes duplicate screening, an interactive Streamlit flow, and PDF score reporting.
+
+**Original project:** June 2024. **2026 revisit:** grounded prompt/context handling, quiz-state fixes, bounded retries, question validation, tests, and clearer setup/security documentation. A learning prototype, not a production or pedagogically validated assessment platform. [Inspect the repository and maintenance notes →](https://github.com/sohanHajra/Quizzo)
+
+---
+
 ## Research publication
 
 ### An N-Gram Framework for Sentiment and Emotion-Aware Word Association Games
