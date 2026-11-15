@@ -166,8 +166,8 @@ Full CV on the [portfolio](https://sohanhajra.github.io/#cv).
 
 ## Technical toolkit
 
-**Languages:** `Python` `C++` `SQL` `C` `JavaScript`
-**Data & modeling:** `Pandas` `NumPy` `scikit-learn` `PyTorch` `XGBoost` `DuckDB` `PostgreSQL`
+**Languages:** `Python` `C++` `SQL` `C` `JavaScript`  
+**Data & modeling:** `Pandas` `NumPy` `scikit-learn` `PyTorch` `XGBoost` `DuckDB` `PostgreSQL`  
 **Infrastructure:** `Git/GitHub` `Docker` `AWS` `Linux/Bash` `Jupyter` `Airflow` `Databento` `REST APIs` `ethers.js` `Web3.js`
 
 ---
