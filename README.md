@@ -1,69 +1,84 @@
 <div align="center">
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/sigil-dark.svg">
+  <img src="assets/sigil.svg" width="64" alt="Sohan Hajra sigil">
+</picture>
+
 # Sohan Hajra
 
 ### Quantitative Research · Research Engineering · Systematic Trading
 
-I build research systems that make **assumptions, data quality, transaction costs, out-of-sample behavior, and failure modes** visible - not just the headline result.
+I build research systems that make **assumptions, data quality, transaction costs, out-of-sample behavior, and failure modes** visible, not just the headline result.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sohan_Hajra-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sohan-hajra/)
-[![Email](https://img.shields.io/badge/Email-sohancollege27%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sohancollege27@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-sohanHajra-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sohanHajra)
-[![Portfolio](https://img.shields.io/badge/Portfolio-sohanhajra.github.io-0F766E?style=for-the-badge&logo=githubpages&logoColor=white)](https://sohanhajra.github.io/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-sohanhajra.github.io-7b2b23?style=for-the-badge&logo=githubpages&logoColor=white)](https://sohanhajra.github.io/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sohan_Hajra-1d1c1a?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sohan-hajra/)
+[![Email](https://img.shields.io/badge/Email-sohancollege27%40gmail.com-1d1c1a?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sohancollege27@gmail.com)
 
-**UIUC B.S. Mathematics & Computer Science · GPA 3.49 / 4.00 · ACM SIGAI Author · UAE Golden Visa**
+**UIUC B.S. Mathematics & Computer Science · ACM SIGAI Author · UAE Golden Visa**
+
+<sub>The <a href="https://sohanhajra.github.io/">portfolio</a> tells the story. This page indexes the evidence: repositories, numbers, and code.</sub>
 
 </div>
 
 ---
 
-## Portfolio map
+## Now · Proposals Lab
 
-| Research question | What I built | What it demonstrates |
-|---|---|---|
-| Can closing-auction information improve short-horizon price forecasts without leakage? | **Nasdaq Closing Auction Forecasting Research** | Market microstructure, feature design, chronological validation, model comparison |
-| Does a simple systematic signal survive costs and unseen market regimes? | **Systematic Trading Research Platform** | Walk-forward research, backtesting discipline, attribution, debugging |
-| How does a DEX actually discover liquidity and execute a token swap on-chain? | **ChainDEX** | AMMs, liquidity pools, contract interaction, execution mechanics |
-| How can ETF/futures dislocations be translated into executable trading logic? | **USO/WTI ETF-Futures Arbitrage** | C++, execution logic, fair value, inventory-aware risk controls |
+[![Repository](https://img.shields.io/badge/View_repository-Proposals-7b2b23?style=flat-square&logo=github)](https://github.com/sohanHajra/Proposals)
+![Cadence](https://img.shields.io/badge/Cadence-weekly-1d1c1a?style=flat-square)
+![Method](https://img.shields.io/badge/Method-pre--registered-1d1c1a?style=flat-square)
 
-> **How to use this portfolio:** start with the project that matches your interest, then expand the sections below for the research question, implementation choices, and what I learned.
+A weekly research-proposal series. Each question goes from a one-page proposal to running code. Hypotheses are written down before results, dead ends stay in the log, and null results get published.
+
+| # | Proposal | Question | Status |
+|---|---|---|---|
+| 01 | [**From Signal to Fill**](https://github.com/sohanHajra/Proposals/tree/main/01-signal-to-fill) | When market conditions are matched, does extra delay between a trading decision and its order's outcome cost price or fills? I am currently replaying the same decision moments at controlled delays on public Binance BTCUSDT data. | In progress · release planned Nov 22, 2026 |
+
+[Proposal](https://github.com/sohanHajra/Proposals/blob/main/01-signal-to-fill/PROPOSAL.md) · [Lab notebook](https://github.com/sohanHajra/Proposals/blob/main/01-signal-to-fill/LAB_NOTEBOOK.md) · [All posts on the Writing tab](https://sohanhajra.github.io/#writing)
 
 ---
 
-## Featured research & projects
+## Selected work
 
-### 1. Nasdaq Closing Auction Forecasting Research
+### 01 · Nasdaq Closing Auction Forecasting
 
-[![Repository](https://img.shields.io/badge/View_repository-Nasdaq_Auction_Research-181717?style=flat-square&logo=github)](https://github.com/sohanHajra/nasdaq-closing-auction-research)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-modeling-1F425F?style=flat-square)
+[![Repository](https://img.shields.io/badge/View_repository-Nasdaq_Auction_Research-1d1c1a?style=flat-square&logo=github)](https://github.com/sohanHajra/nasdaq-closing-auction-research)
+[![Overview](https://img.shields.io/badge/Research_overview-portfolio-7b2b23?style=flat-square)](https://sohanhajra.github.io/research/nasdaq.html)
+![Python](https://img.shields.io/badge/Python-1d1c1a?style=flat-square&logo=python&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-1d1c1a?style=flat-square)
 
-Short-horizon research around the Nasdaq closing auction using indicative auction prices, signed imbalance, paired volume, and quoted liquidity.
+**Question:** can information available before the close improve forecasts of the final closing-cross price, without leaking future auction information?
+
+| Fixed horizons | Model families | Final test set |
+|---:|---:|---:|
+| 6 | 3 | Frozen |
 
 <details>
 <summary><b>Research design</b></summary>
 <br>
 
-- Built stock-day targets and fixed-horizon features with leakage-safe timing.
+- Built stock-day targets and fixed-horizon features around indicative prices, signed imbalance, paired volume, and quoted liquidity, with leakage-safe timing.
 - Compared market-price baselines, OLS/Ridge, and XGBoost.
 - Used chronological train / validation / test splits rather than random cross-validation.
 - Selected horizon-specific models on validation MAE and audited held-out robustness by trading date and error tail.
 
-The part I care about most is not whether a more complicated model wins — it is whether the result survives a research design that makes it hard to fool myself.
+The part I care about most is not whether a more complicated model wins. It is whether the result survives a research design that makes it hard to fool myself.
 
 </details>
 
 ---
 
-### 2. Systematic Trading Research Platform
+### 02 · Systematic Trading Research Platform
 
-[![Repository](https://img.shields.io/badge/View_repository-Systematic_Trading_Platform-181717?style=flat-square&logo=github)](https://github.com/sohanHajra/quant_trading_system)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=000000)
-![Research](https://img.shields.io/badge/Focus-Walk--forward_validation-4C78A8?style=flat-square)
+[![Repository](https://img.shields.io/badge/View_repository-Systematic_Trading_Platform-1d1c1a?style=flat-square&logo=github)](https://github.com/sohanHajra/quant_trading_system)
+[![Overview](https://img.shields.io/badge/Research_overview-portfolio-7b2b23?style=flat-square)](https://sohanhajra.github.io/research/systematic-trading.html)
+![Python](https://img.shields.io/badge/Python-1d1c1a?style=flat-square&logo=python&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-1d1c1a?style=flat-square&logo=duckdb&logoColor=white)
 
-An independent research platform for testing equity strategies with explicit transaction costs, rolling out-of-sample evaluation, benchmark comparison, and attribution.
+**Question:** what survives when parameter choice, costs, warm-up history, and out-of-sample accounting are kept separate?
+
+12-month training / 3-month out-of-sample walk-forward evaluation, 15 OOS folds, 5 bps turnover costs, benchmark comparison, and trade and regime attribution.
 
 | OOS trades | CAGR | Annualized Sharpe | Max drawdown | Market exposure |
 |---:|---:|---:|---:|---:|
@@ -73,9 +88,9 @@ An independent research platform for testing equity strategies with explicit tra
 <summary><b>What made this project useful</b></summary>
 <br>
 
-The strategy **did not beat SPY buy-and-hold on return or Sharpe** during the evaluated period. That made the project more useful, not less.
+The baseline **reduced drawdown but did not beat SPY buy-and-hold on return or Sharpe**. That made the project more useful, not less.
 
-I added trade-, regime-, portfolio-, and flat-period attribution to understand where the strategy helped, where it failed, and whether implementation mistakes were changing the result. I also reworked fold accounting so indicator warm-up history was separated from out-of-sample scoring and positions, costs, trades, and compounded equity were recomputed only after each test boundary.
+I added trade-, regime-, portfolio-, and flat-period attribution to understand where the strategy helped, where it failed, and whether implementation mistakes were changing the result. I also reworked fold accounting so indicator warm-up history was separated from out-of-sample scoring, and positions, costs, trades, and compounded equity were recomputed only after each test boundary.
 
 > Research baseline only. These are not live, audited, or client investment results.
 
@@ -83,41 +98,14 @@ I added trade-, regime-, portfolio-, and flat-period attribution to understand w
 
 ---
 
-### 3. ChainDEX — Ethereum DEX Prototype
+### 03 · USO–WTI ETF/Futures Arbitrage · UIUC team project
 
-[![Repository](https://img.shields.io/badge/View_repository-ChainDEX-181717?style=flat-square&logo=github)](https://github.com/sohanHajra/ChainDEX)
-![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat-square&logo=ethereum&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Web3.js](https://img.shields.io/badge/Web3.js-F16822?style=flat-square&logo=web3dotjs&logoColor=white)
+[![Repository](https://img.shields.io/badge/View_repository-USO%2FWTI_Arbitrage-1d1c1a?style=flat-square&logo=github)](https://github.com/sohanHajra/USO-WTI_ETF-Futures_Arbitrage-FIN_556)
+[![Overview](https://img.shields.io/badge/Project_overview-portfolio-7b2b23?style=flat-square)](https://sohanhajra.github.io/research/uso-wti.html)
+![C++](https://img.shields.io/badge/C++-1d1c1a?style=flat-square&logo=cplusplus&logoColor=white)
+![Markets](https://img.shields.io/badge/Data-IEX_%7C_NASDAQ_%7C_CME-1d1c1a?style=flat-square)
 
-One of my earlier market-technology projects. I built a wallet-connected decentralized-exchange prototype to understand **AMMs, liquidity pools, approvals, routing, and on-chain execution** beyond the surface-level idea of “crypto trading.”
-
-<details>
-<summary><b>Under the hood</b></summary>
-<br>
-
-The application follows a Uniswap V2-style contract hierarchy:
-
-```text
-wallet → router → factory → pair contracts → token metadata / liquidity
-             ↘ quote → approval → minimum-output guard → swap
-```
-
-It discovers pools from contract state, reads ERC-20 balances and allowances, quotes swaps with `getAmountsOut`, handles approvals, and submits token swaps. When I revisited the project, I also fixed a pair-filtering bug, added minimum-output slippage protection, and documented limitations around token decimals, single-hop routing, historical Goerli infrastructure, and production security.
-
-What I like about revisiting old projects is that they show two things at once: what I knew when I built them, and how much more critically I can evaluate them now.
-
-</details>
-
----
-
-### 4. USO/WTI ETF-Futures Arbitrage — C++ Team Project
-
-[![Repository](https://img.shields.io/badge/View_repository-USO%2FWTI_Arbitrage-181717?style=flat-square&logo=github)](https://github.com/sohanHajra/USO-WTI_ETF-Futures_Arbitrage-FIN_556)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![Markets](https://img.shields.io/badge/Data-IEX_%7C_NASDAQ_%7C_CME-0B3D91?style=flat-square)
-
-A UIUC team project translating ETF/futures dislocations into executable trading logic in TT Strategy Studio.
+**Question:** how does a simple fair-value dislocation idea change once venue selection, inventory, order sizing, and working-order safety become real constraints?
 
 <details>
 <summary><b>My contribution</b></summary>
@@ -133,28 +121,33 @@ This project pushed me from thinking about a signal in isolation to thinking abo
 
 ---
 
-## AI/product build · revisited
-
-### Quizzo — document-grounded LLM quiz generator
-
-[![Repository](https://img.shields.io/badge/View_repository-Quizzo-181717?style=flat-square&logo=github)](https://github.com/sohanHajra/Quizzo)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Gemini](https://img.shields.io/badge/Vertex_AI-Gemini-4285F4?style=flat-square)
-![Retrieval](https://img.shields.io/badge/Retrieval-Chroma-0F766E?style=flat-square)
-
-An earlier personal project built out of a real study frustration: before exams, generic LLM quizzes did not reliably test me on the *specific material in my notes*. Quizzo ingests PDFs, splits and embeds text with Vertex AI, retrieves relevant context from Chroma, and prompts Gemini to generate structured multiple-choice questions and explanations. It includes duplicate screening, an interactive Streamlit flow, and PDF score reporting.
-
-**Original project:** June 2024. **2026 revisit:** grounded prompt/context handling, quiz-state fixes, bounded retries, question validation, tests, and clearer setup/security documentation. A learning prototype, not a production or pedagogically validated assessment platform. [Inspect the repository and maintenance notes →](https://github.com/sohanHajra/Quizzo)
-
----
-
-## Research publication
+## Publication
 
 ### An N-Gram Framework for Sentiment and Emotion-Aware Word Association Games
 
-[![DOI](https://img.shields.io/badge/ACM_SIGAI_AI_Matters-10.1145%2F3774399.3774407-0085CA?style=flat-square)](https://doi.org/10.1145/3774399.3774407)
+[![DOI](https://img.shields.io/badge/ACM_SIGAI_AI_Matters-10.1145%2F3774399.3774407-7b2b23?style=flat-square)](https://doi.org/10.1145/3774399.3774407)
 
-Co-authored research combining n-gram co-occurrence and GloVe embeddings with VADER sentiment scores and SenticNet emotion labels. Published in **ACM SIGAI AI Matters 11(1), 49–58 (2025)**.
+Undergraduate research with a multidisciplinary Penn State team, combining n-gram co-occurrence and GloVe embeddings with VADER sentiment and SenticNet emotion labels. Published in **ACM SIGAI AI Matters 11(1), 49–58 (2025)**. I contributed model development, RMSE-based evaluation, analysis, and technical writing.
+
+---
+
+## Workbench
+
+[**How much should you bet on an edge?**](https://sohanhajra.github.io/#workbench) An interactive Kelly bankroll simulator: drag the win probability, payout, and bet size, and watch 20 bankrolls compound on a log scale against the expected-growth curve g(f).
+
+---
+
+<details>
+<summary><b>Earlier builds, revisited</b> · kept secondary to the research</summary>
+<br>
+
+**[Quizzo](https://github.com/sohanHajra/Quizzo)** · AI / product engineering · 2024, revisited 2026
+A personal LLM quiz builder, prompted by generic questions not matching my own notes before exams. PDFs are chunked and embedded with Vertex AI, context is retrieved from Chroma, and Gemini writes structured multiple-choice questions. The 2026 pass revisits validation, state, retries, configuration, and tests. An early learning prototype, not a production service.
+
+**[ChainDEX](https://github.com/sohanHajra/ChainDEX)** · Crypto / DeFi systems · 2023, revisited 2026
+An educational DEX prototype exploring AMM liquidity pools and on-chain execution: a React interface around Uniswap V2-style router, factory, pair, and ERC-20 contracts, with swap quoting, approvals, minimum-output protection, and transaction-state handling. The revisit fixed a pair-filtering bug and documented limits around decimals, single-hop routing, and security. Not a production exchange or audited contract.
+
+</details>
 
 ---
 
@@ -162,56 +155,31 @@ Co-authored research combining n-gram co-occurrence and GloVe embeddings with VA
 
 | Experience | What I worked on |
 |---|---|
-| **Spade Labs — Data Engineering Intern** | Dockerized market-research pipeline on AWS SageMaker; PostgreSQL/pgvector ingestion across 1M+ embedding records |
-| **Folio — Data Analyst Intern** | Python ETL, Airflow, SQLAlchemy, schema-change checks, DAG tests, retry handling |
-| **RadicalX — AI Engineering Intern** | Containerized Python AI services, API integrations, prompt evaluation, MLflow and Prometheus |
-| **Penn State — Undergraduate Student Researcher** | NLP model development, evaluation, analysis, and technical writing leading to the ACM SIGAI publication |
+| **Spade Labs · Data Engineering Intern** | Dockerized market-research pipeline on AWS SageMaker; PostgreSQL/pgvector ingestion across 1M+ embedding records |
+| **Folio · Data Analyst Intern** | Python ETL, Airflow, SQLAlchemy, schema-change checks, DAG tests, retry handling |
+| **RadicalX · AI Engineering Intern** | Containerized Python AI services, API integrations, prompt evaluation, MLflow and Prometheus |
+| **Penn State · Undergraduate Student Researcher** | NLP model development, evaluation, analysis, and technical writing leading to the ACM SIGAI publication |
+
+Full CV on the [portfolio](https://sohanhajra.github.io/#cv).
 
 ---
 
 ## Technical toolkit
 
-**Languages & data**  
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-
-`Pandas` `NumPy` `scikit-learn` `PyTorch` `XGBoost` `DuckDB` `PostgreSQL`
-
-**Engineering & research infrastructure**  
-`Git/GitHub` `Docker` `AWS` `Linux/Bash` `Jupyter` `Airflow` `Matplotlib` `Databento` `REST APIs` `ethers.js` `Web3.js`
+**Languages:** `Python` `C++` `SQL` `C` `JavaScript`
+**Data & modeling:** `Pandas` `NumPy` `scikit-learn` `PyTorch` `XGBoost` `DuckDB` `PostgreSQL`
+**Infrastructure:** `Git/GitHub` `Docker` `AWS` `Linux/Bash` `Jupyter` `Airflow` `Databento` `REST APIs` `ethers.js` `Web3.js`
 
 ---
 
-## How I approach research
-
-```text
-question
-  ↓
-define the benchmark
-  ↓
-build the smallest defensible experiment
-  ↓
-separate training information from evaluation
-  ↓
-model costs + implementation constraints
-  ↓
-look for the failure mode
-  ↓
-only then decide whether the result is interesting
-```
-
 <details>
-<summary><b>Five principles I try to follow</b></summary>
+<summary><b>How I approach research</b></summary>
 <br>
 
-1. **Define the hypothesis and benchmark before tuning.**
-2. **Keep training history separate from out-of-sample scoring.**
-3. **Model costs, exposure, turnover, and implementation constraints.**
-4. **Treat implementation details as part of the research result.**
-5. **Report errors, limitations, and underperformance — not only the good-looking number.**
+1. **Separate selection from evaluation.** Training and validation data make the choices; the final test set stays out of the decision loop.
+2. **Benchmark before celebrating.** A result matters only against a credible baseline, realistic costs, and the risk it takes.
+3. **Explain the miss.** When a result disappoints, attribution and failure analysis teach more than another parameter sweep.
+4. **Write the hypothesis down first.** Pre-register, then test; publish the null results too.
 
 </details>
 
@@ -219,18 +187,16 @@ only then decide whether the result is interesting
 
 ## Currently
 
-- Deepening my work in **market microstructure, systematic research, and research engineering**.
-- Revisiting older projects with the standards I use today — ChainDEX is one example.
-- Looking for new-graduate opportunities where research, statistics, software, and markets meet.
+- Running Proposals Lab: one falsifiable market-microstructure or execution question each week.
+- Revisiting older projects with the standards I use today.
+- Looking for early-career work where quantitative research, software, and market decision-making meet.
 
 ---
 
 <div align="center">
 
-### Want to talk research, markets, or engineering?
+[Portfolio](https://sohanhajra.github.io/) · [LinkedIn](https://www.linkedin.com/in/sohan-hajra/) · [Email](mailto:sohancollege27@gmail.com)
 
-[Portfolio](https://sohanhajra.github.io/) · [LinkedIn](https://www.linkedin.com/in/sohan-hajra/) · [Email](mailto:sohancollege27@gmail.com) · [GitHub](https://github.com/sohanHajra)
-
-<sub>Built as the front page of my technical portfolio - projects above are intended to be read, questioned, and inspected.</sub>
+<sub>Projects here are meant to be read, questioned, and inspected.</sub>
 
 </div>
