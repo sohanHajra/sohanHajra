@@ -26,10 +26,9 @@ I build research systems that make **assumptions, data quality, transaction cost
 ## Now · Proposals Lab
 
 [![Repository](https://img.shields.io/badge/View_repository-Proposals-7b2b23?style=flat-square&logo=github)](https://github.com/sohanHajra/Proposals)
-![Cadence](https://img.shields.io/badge/Cadence-weekly-1d1c1a?style=flat-square)
 ![Method](https://img.shields.io/badge/Method-pre--registered-1d1c1a?style=flat-square)
 
-A weekly research-proposal series. Each question goes from a one-page proposal to running code. Hypotheses are written down before results, dead ends stay in the log, and null results get published.
+A research-proposal series. Each question goes from a one-page proposal to running code. Hypotheses are written down before results, dead ends stay in the log, and null results get published.
 
 | # | Proposal | Question | Status |
 |---|---|---|---|
@@ -187,7 +186,7 @@ Full CV on the [portfolio](https://sohanhajra.github.io/#cv).
 
 ## Currently
 
-- Running Proposals Lab: one falsifiable market-microstructure or execution question each week.
+- Running Proposals Lab: one falsifiable market-microstructure or execution question at a time.
 - Revisiting older projects with the standards I use today.
 - Looking for early-career work where quantitative research, software, and market decision-making meet.
 
