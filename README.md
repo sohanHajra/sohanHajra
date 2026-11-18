@@ -136,6 +136,19 @@ Undergraduate research with a multidisciplinary Penn State team, combining n-gra
 
 ---
 
+## Agent evals
+
+### Handoff Drift Eval
+
+[![Repository](https://img.shields.io/badge/View_repository-Handoff_Drift_Eval-1d1c1a?style=flat-square&logo=github)](https://github.com/sohanHajra/handoff-drift-eval)
+![Python](https://img.shields.io/badge/Python-1d1c1a?style=flat-square&logo=python&logoColor=white)
+
+**Question:** does a coding agent actually finish a multi-file change, or only say that it did?
+
+The agent migrates a fill-reconciliation pipeline from float dollars to integer cents across two files, then regenerates the books and a handoff manifest. The grader ignores the agent's report: it runs the agent's pipeline on a holdout batch in a separate process and checks the files left on disk. A reference solution passes and eight deliberately broken variants fail; the README lists what the grader does not catch.
+
+---
+
 <details>
 <summary><b>Earlier builds, revisited</b> · kept secondary to the research</summary>
 <br>
