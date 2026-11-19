@@ -30,6 +30,8 @@ I build research systems that make **assumptions, data quality, transaction cost
 
 A research-proposal series. Each question goes from a one-page proposal to running code. Hypotheses are written down before results, dead ends stay in the log, and null results get published.
 
+Every release goes through [claimcheck](https://github.com/sohanHajra/Proposals/tree/main/claimcheck), the lab's own checker. Each number in the public notes is traced to the results file it came from, and the check fails if any sentence disagrees with the data. It also confirms that every cited source says how deeply it was read and that the preregistration was committed before any test data was touched.
+
 | # | Proposal | Question | Status |
 |---|---|---|---|
 | 01 | [**From Signal to Fill**](https://github.com/sohanHajra/Proposals/tree/main/01-signal-to-fill) | When market conditions are matched, does extra delay between a trading decision and its order's outcome cost price or fills? I am currently replaying the same decision moments at controlled delays on public Binance BTCUSDT data. | In progress · release planned Nov 22, 2026 |
