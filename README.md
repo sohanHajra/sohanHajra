@@ -34,7 +34,7 @@ Every release goes through [claimcheck](https://github.com/sohanHajra/Proposals/
 
 | # | Proposal | Question | Status |
 |---|---|---|---|
-| 01 | [**From Signal to Fill**](https://github.com/sohanHajra/Proposals/tree/main/01-signal-to-fill) | When market conditions are matched, does extra delay between a trading decision and its order's outcome cost price or fills? I am currently replaying the same decision moments at controlled delays on public Binance BTCUSDT data. | In progress · release planned Nov 22, 2026 |
+| 01 | [**From Signal to Fill**](https://github.com/sohanHajra/Proposals/tree/main/01-signal-to-fill) | When market conditions are matched, does extra delay between a trading decision and its order's outcome cost price or fills? | Released Nov 22, 2026 · Inconclusive. Primary tests null by design; a taker acting on book imbalance paid 0.52 to 0.66 bps by 500 ms, an upper end ([report](https://github.com/sohanHajra/Proposals/blob/main/01-signal-to-fill/FINAL_REPORT.md)) |
 
 [Proposal](https://github.com/sohanHajra/Proposals/blob/main/01-signal-to-fill/PROPOSAL.md) · [Lab notebook](https://github.com/sohanHajra/Proposals/blob/main/01-signal-to-fill/LAB_NOTEBOOK.md) · [All posts on the Writing tab](https://sohanhajra.github.io/#writing)
 
