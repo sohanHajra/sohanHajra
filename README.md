@@ -35,6 +35,7 @@ Every release goes through [claimcheck](https://github.com/sohanHajra/Proposals/
 | # | Proposal | Question | Status |
 |---|---|---|---|
 | 01 | [**From Signal to Fill**](https://github.com/sohanHajra/Proposals/tree/main/01-signal-to-fill) | When market conditions are matched, does extra delay between a trading decision and its order's outcome cost price or fills? | 🟢 Released Nov 22, 2026 · Inconclusive. Primary tests null by design; a taker acting on book imbalance paid 0.52 to 0.66 bps by 500 ms, an upper end ([report](https://github.com/sohanHajra/Proposals/blob/main/01-signal-to-fill/FINAL_REPORT.md)) |
+| 01.b | [**Signal Cost Confirm**](https://github.com/sohanHajra/Proposals/tree/main/01b-signal-cost-confirm) · sequel to 01 | Do 01's two leads, the cost to a taker acting on a signal and the passive cost once marketable orders are left out, hold on twelve unseen days? | 🟢 Released Nov 25, 2026 · Supported. The signal taker's slope interval is above zero on all 12 test days, an extra 0.48 to 0.68 bps by 500 ms; the passive effect holds but is small ([write-up](https://github.com/sohanHajra/Proposals/blob/main/01b-signal-cost-confirm/README.md)) |
 
 [Proposal](https://github.com/sohanHajra/Proposals/blob/main/01-signal-to-fill/PROPOSAL.md) · [Lab notebook](https://github.com/sohanHajra/Proposals/blob/main/01-signal-to-fill/LAB_NOTEBOOK.md) · [All posts on the Writing tab](https://sohanhajra.github.io/#writing)
 
